@@ -1,5 +1,6 @@
-# UI_Pets_Project - UI testing of a website [Vite app](http://34.141.58.52:8080/#/)
+# UI_Pets_Project - UI testing of a website [Test app](http://34.141.58.52:8080/#/)
 
+- data - a folder with 
 - tests - a folder with all the tests;
 - locators - a folder with all the locators.
   conftest.py- fixture file;
