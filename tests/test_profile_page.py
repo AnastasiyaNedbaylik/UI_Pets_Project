@@ -1,6 +1,5 @@
 from locators.profile_page_locators import ProfilePageLocators
 from pages.profile_page import ProfilePage
-from pages.add_pets import AddPetsForm
 from data.data import LoginPageData, ProfilePageData, NewPetData, MainPageData, PetEditPage
 import requests
 import pytest
