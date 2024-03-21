@@ -14,7 +14,7 @@ def test_quit_profile(browser, execute_login):
     time.sleep(3)
     response = requests.get(LoginPageData.LOGIN_PAGE_URL)
     r = response.status_code
-    assert response.status_code == 200, f'{r} is not our expectation' # если вернется ошибка
+    assert response.status_code == 200, f'{r} is not our expectation'  # если вернется ошибка
 
 
 @pytest.mark.smoke
@@ -62,7 +62,6 @@ def test_go_to_main_page(browser, execute_login):
     browser.save_screenshot("/Users/anastasiya.niadbailik/Automation/Selenium_UI_Pets/screenshots/main_page.png")
     response = requests.get(MainPageData.MAIN_PAGE_URL)
     assert response.status_code == 200
-
 
 # @pytest.mark.skip
 # @pytest.mark.regression
