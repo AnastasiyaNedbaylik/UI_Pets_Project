@@ -5,7 +5,7 @@ current_datetime = datetime.now()
 class RegisterPageData:
     REGISTER_PAGE_URL = 'http://34.141.58.52:8080/#/register'
     # LOGIN = 'tests@pets.com' #для одного аккаунта
-    LOGIN = f'anastasiya.niadbailik+{current_datetime.microsecond}@gmail.com' #для всех последующих
+    LOGIN = f'anastasiya.niadbailik+{current_datetime.microsecond}@gmail.com' #для всех последующих аккаунтов
     PASS = 'Introvert26111992@'
 
 
