@@ -16,10 +16,9 @@ class EditPet(BasePage):
         self.browser.find_element(*ProfilePageLocators.PET_EDIT_BUTTON).click()
 
     def clear(self):
-        for i in range(0, 100):
-            self.browser.find_element(*EditPetLocators.PET_NAME).send_keys(Keys.BACKSPACE)
-        # self.browser.find_element(*EditPetLocators.PET_NAME).click() # не работает для поля name
-        # self.browser.find_element(*EditPetLocators.PET_NAME).clear()
+        # for i in range(0, 100):
+        #     self.browser.find_element(*EditPetLocators.PET_NAME).send_keys(Keys.BACKSPACE)
+        self.browser.find_element(*EditPetLocators.PET_NAME).clear() # не работает для поля name
 
     def input_new_pet_name(self):
         self.browser.find_element(*EditPetLocators.PET_NAME).send_keys(*NewPetData.NEW_PET_NAME)

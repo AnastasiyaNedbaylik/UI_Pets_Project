@@ -4,16 +4,17 @@ current_datetime = datetime.now()
 
 class RegisterPageData:
     REGISTER_PAGE_URL = 'http://34.141.58.52:8080/#/register'
-    # LOGIN = 'tests@pets.com' #для одного аккаунта
+    # LOGIN = 'tests2@pets.com' #для одного аккаунта
+    # LOGIN = 'anastasiya.niadbailik+autotest2@gmail.com'
     LOGIN = f'anastasiya.niadbailik+{current_datetime.microsecond}@gmail.com' #для всех последующих аккаунтов
-    PASS = 'Introvert26111992@'
+    PASS = 'fhfurbd4547474@!@!'
 
 
 class LoginPageData:
     LOGIN_PAGE_URL = 'http://34.141.58.52:8080/#/login'
-    VALID_EMAIL = 'anastasiya.niadbailik+autotest@gmail.com'
-    VALID_EMAILS = ['anastasiya.niadbailik+autotest@gmail.com', 'tests@pets.com']
-    VALID_PASS = 'Introvert26111992@'
+    VALID_EMAIL = 'anastasiya.niadbailik+autotest2@gmail.com'
+    VALID_EMAILS = ['anastasiya.niadbailik+autotest2@gmail.com', 'tests2@pets.com']
+    VALID_PASS = 'fhfurbd4547474@!@!'
     INVALID_PASS = ['12345', 'password']
     INVALID_EMAILS = ['qwerty@pet.com', 'qwertyu@pet.com']
     INCORRECT_EMAILS = ['tests.tests.net', 'tut@com']

@@ -1,5 +1,6 @@
 import pytest
 from selenium import webdriver
+import chromedriver_autoinstaller
 from data.data import LoginPageData
 from pages.login_page import LoginPage
 
@@ -7,6 +8,7 @@ from pages.login_page import LoginPage
 @pytest.fixture(autouse=True)
 def browser():
     browser = webdriver.Chrome()
+    browser.maximize_window()
     yield browser
     browser.quit()
 

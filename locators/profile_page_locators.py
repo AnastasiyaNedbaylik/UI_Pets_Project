@@ -35,7 +35,7 @@ class AddPetsLocators:
 class EditPetLocators:
     # PET_NAME = (By.CSS_SELECTOR, '#name')
     PET_NAME = (By.ID, 'name')
-    # PET_NAME = (By.XPATH, '/html/body/div[1]/main/div/form/div/div[2]/div[2]/div[2]/div[1]/input')
+    # PET_NAME = (By.XPATH, '//*[@id="name"]')
     IMAGE_INPUT = (By.XPATH, '//*[@id="app"]/main/div/form/div/div[2]/div[2]/div[1]/div[2]/div/div[2]/div/span/input')
     IMAGE_CHOOSE_BUTTON = (By.XPATH, '//*[@id="app"]/main/div/form/div/div[2]/div[2]/div[1]/div[2]/div/div[2]/div/span')
 

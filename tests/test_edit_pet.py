@@ -9,6 +9,7 @@ from pages.edit_pet import EditPet
 def test_editing_pet(browser, execute_login):
     page = EditPet(browser, PetEditPage.PET_EDIT_URL)
     page.edit_pet_btn()
+    time.sleep(3) # нужно добавить ожидание
     page.clear() # поле не очищается, нужно подобрать другой локатор или другой метод очистки поля
     time.sleep(3)
     page.input_new_pet_name()
